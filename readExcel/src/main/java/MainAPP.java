@@ -1,5 +1,6 @@
 import com.sun.org.apache.regexp.internal.RE;
 import exce.ExcelReadHelper;
+import javafx.scene.effect.Light;
 import model.Restaurant;
 
 import java.awt.datatransfer.StringSelection;
@@ -15,7 +16,7 @@ public class MainAPP {
     public static void main(String[] args) throws Exception {
 
 
-        String fileName = "/Users/onaple/git/readExcel/src/main/java/file/123.xls";
+        String fileName = "/Users/onaple/git/excelUtil/readExcel/src/main/java/file/123.xls";
         File file = new File(fileName);
         List<Restaurant> lists = ExcelReadHelper.readExcel(file, Restaurant.class);
 
